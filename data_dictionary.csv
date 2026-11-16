@@ -1,0 +1,33 @@
+﻿File,Column,Description,Data_Type
+users.csv,User_ID,Unique synthetic user identifier,Integer
+users.csv,Username,Synthetic username,Text
+users.csv,Age,User age; a small number are intentionally missing,Numeric
+users.csv,Gender,Synthetic user gender category,Category
+users.csv,Country,Country associated with the profile,Category
+users.csv,City,City associated with the profile; some blanks included,Text
+users.csv,Account_Type,"Personal, Creator or Business; casing inconsistencies included",Category
+users.csv,Join_Date,Account join date,Date
+users.csv,Followers_Count,Simulated follower count,Integer
+users.csv,Following_Count,Simulated following count,Integer
+users.csv,Is_Verified,Simulated verification flag,Boolean
+posts.csv,Post_ID,Unique synthetic post identifier,Integer
+posts.csv,User_ID,Creator ID; joins to users.User_ID,Integer
+posts.csv,Post_Date,Post timestamp,Datetime
+posts.csv,Post_Type,"Image, Carousel or Reel; casing inconsistencies included",Category
+posts.csv,Topic,Synthetic content topic,Category
+posts.csv,Caption,Synthetic caption; some blanks included,Text
+posts.csv,Hashtags,Space-separated synthetic hashtags,Text
+posts.csv,Likes,Simulated likes,Integer
+posts.csv,Comments_Count,Exact count of linked comments rows,Integer
+posts.csv,Shares,Simulated shares,Integer
+posts.csv,Saves,Simulated saves,Integer
+posts.csv,Reach,Simulated accounts reached,Integer
+posts.csv,Impressions,Simulated impressions,Integer
+comments.csv,Comment_ID,Unique synthetic comment identifier,Integer
+comments.csv,Post_ID,Post ID; joins to posts.Post_ID,Integer
+comments.csv,User_ID,Commenter ID; joins to users.User_ID,Integer
+comments.csv,Comment_Date,Comment timestamp after post timestamp,Datetime
+comments.csv,Comment_Text,Synthetic comment text; some blanks included,Text
+comments.csv,Like_Count,Simulated likes on the comment,Integer
+comments.csv,Reply_Count,Simulated reply count,Integer
+comments.csv,Sentiment,Synthetic teaching label; casing inconsistencies included,Category
